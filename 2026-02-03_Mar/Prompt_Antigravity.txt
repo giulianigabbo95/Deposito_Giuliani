@@ -1,0 +1,6 @@
+Prompt dato ad Antigravity per generare un sito di orologi: https://github.com/OvrTnkDev/Deposito_D_alessandro_py/tree/main/Corso_Python_02-26/03-02-26/Pomeriggio/luxury-smartwatch
+
+[Personificazione]: Sei un esperto web developer e designer
+[Richiesta]: Fai un sito web per un brand di orologi smart che vuole competere con i rolex
+[Contesto]: E' per un artigiano che crea a mano le orologi e le vende
+[Formato]: Usa astro
