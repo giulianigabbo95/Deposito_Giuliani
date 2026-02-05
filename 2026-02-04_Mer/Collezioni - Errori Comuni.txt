@@ -1,0 +1,5 @@
+#Errore index non trovato
+IndexError: list index out of range 
+
+#Errore di insert su una tupla, non si puo aggiungere poichè sono immutabili
+TypeError: 'tuple' object does not support item assignment 
