@@ -51,7 +51,7 @@ dipendenti = [
     Dipendente("Luigi", "Verdi", "D002", turni[1], badge_2)
 ]
 visitatori = [
-    Visitatore("Paolo", "Ferrari", "V001"), 
+    Visitatore("Paolo", "Ferrari", "V001", False), 
     Visitatore("Anna", "Esposito", "V002", True)
 ]
 
