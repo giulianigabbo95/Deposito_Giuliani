@@ -1,0 +1,11 @@
+ID_Cliente,Età,Durata_Abbonamento,Tariffa_Mensile,Dati_Consumati,Servizio_Clienti_Contatti,Churn
+1,25,6,29.99,15,3,No
+2,45,24,49.99,50,1,No
+3,38,12,39.99,30,4,Sì
+4,60,48,59.99,70,0,No
+5,29,3,19.99,10,5,Sì
+6,50,36,54.99,65,2,No
+7,33,18,34.99,25,3,Sì
+8,41,60,64.99,80,1,No
+9,27,9,24.99,18,4,Sì
+10,55,72,69.99,90,0,No

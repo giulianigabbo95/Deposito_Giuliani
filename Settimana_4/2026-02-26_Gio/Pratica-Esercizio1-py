@@ -1,0 +1,120 @@
+'''
+Il dataset contiene le seguenti variabili:
+    - ID_Cliente → Identificativo univoco del cliente
+    - Età → Età del cliente
+    - Durata_Abbonamento → Numero di mesi di permanenza
+    - Tariffa_Mensile → Importo mensile pagato
+    - Dati_Consumati → GB medi consumati al mese
+    - Servizio_Clienti_Contatti → Numero di contatti con il servizio clienti
+    - Churn → Indica se il cliente ha abbandonato (Sì / No)
+
+1) Caricamento ed Esplorazione Iniziale:
+    - Caricare il file CSV con pandas
+    - Analizzare la struttura del dataset con:
+        . info()
+        . describe()
+        . value_counts()
+    - Individuare eventuali valori mancanti
+
+2) Pulizia dei Dati:
+    - Gestire i valori mancanti (imputazione o rimozione)
+    - Correggere anomalie come:
+        . Età negative
+        . Tariffe mensili irrealistiche
+        . Valori inconsistenti nei consumi
+
+3) Analisi Esplorativa (EDA):
+    - Creare nuove variabili utili, ad esempio:
+        . Costo_per_GB = Tariffa_Mensile / Dati_Consumati
+    - Analizzare le relazioni tra variabili usando:
+        . groupby()
+        . corr()
+
+4) Preparazione per la Modellazione:
+    - Convertire Churn in formato numerico:
+        . No → 0
+        . Sì → 1
+    - Normalizzare le variabili numeriche con numpy
+
+5) Modellazione Predittiva
+    - Implementare una Regressione Logistica con scikit-learn
+    - Valutare il modello con:
+        . Accuratezza (Accuracy)
+        . AUC (Area Under Curve)
+'''
+
+import pandas as pd
+import numpy as np
+
+
+df = pd.read_csv("clienti_tim.csv")
+
+print("Info DataSERT", df.info())
+print("Descrizione Statistica", df.describe())
+print("Conto Abbandoni", df["SeSoDati"].value_counts())
+
+
+
+# Rimozione valori mancanti
+df = df.dropna()
+
+# Rimozione anomalie
+df = df[df["Età"] > 0]
+df = df[df["Tariffa_Mensile"] > 0]
+df = df[df["Dati_Consumati"] > 0]
+df = df[df["Durata_Abbonamento"] >= 0]
+
+# Conversione SeSoDati in numerico
+df["SeSoDati"] = df["SeSoDati"].map({"No": 0, "Sì": 1})
+
+
+
+# Nuova variabile: costo per GB
+df["Costo_per_GB"] = df["Tariffa_Mensile"] / df["Dati_Consumati"]
+
+# Creazione fasce di durata
+df["Fascia_Durata"] = pd.cut(
+    df["Durata_Abbonamento"],
+    bins=[0, 12, 24, 48, 100]
+)
+
+# Creazione fasce di età
+df["Fascia_Eta"] = pd.cut(
+    df["Età"],
+    bins=[18, 30, 45, 60, 80]
+)
+
+
+
+# SeSoDati Tasso Globale
+print("SeSoDati Tasso Globale:", df["SeSoDati"].mean())
+
+# SeSoDati per durata
+print("SeSoDati per Fascia Durata", df.groupby("Fascia_Durata")["SeSoDati"].mean())
+
+# SeSoDati per età
+print("SeSoDati per Fascia Eta", df.groupby("Fascia_Eta")["SeSoDati"].mean())
+
+# Correlazioni
+print("Correlazioni con SeSoDati")
+corr = df.corr(numeric_only=True)
+print(corr["SeSoDati"].sort_values(ascending=False))
+
+
+
+# Normalizzazione manuale
+df["Durata_norm"] = df["Durata_Abbonamento"] / df["Durata_Abbonamento"].max()
+df["Contatti_norm"] = df["Servizio_Clienti_Contatti"] / df["Servizio_Clienti_Contatti"].max()
+df["Tariffa_norm"] = df["Tariffa_Mensile"] / df["Tariffa_Mensile"].max()
+
+# Costruzione score di rischio
+df["Score_Rischio"] = (
+    0.5 * df["Contatti_norm"] +
+    0.3 * df["Tariffa_norm"] -
+    0.4 * df["Durata_norm"]
+)
+
+# Valutazione correlazione score-sesodati
+print("Correlazioni Score - SeSoDati", df[["Score_Rischio", "SeSoDati"]].corr())
+
+print("Anteprima DataSet FInale", df.head())
