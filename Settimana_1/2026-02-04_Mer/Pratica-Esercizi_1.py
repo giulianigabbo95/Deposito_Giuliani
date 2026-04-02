@@ -5,6 +5,7 @@ La struttura deve prevedere 3 livelli di annidamento e utilizzare il confronto t
 '''
 print("")
 print("START")
+print("----------------------------------------------------------")
 
 #Variabili
 a = int(input("Dimmi un numero come limite inferiore di range per indovinare al numero che sto pensando: "))

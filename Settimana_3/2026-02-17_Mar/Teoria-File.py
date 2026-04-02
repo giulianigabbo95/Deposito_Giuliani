@@ -445,9 +445,9 @@ def leggifile():
 
 
 
-cont =leggifile()
+cont = leggifile()
 listaR = cont.split("\n")
-matrice1 =[]
+matrice1 = []
 ['nome,cognome,indirizzo', 
  'tommaso,muraca,via roma', 
  'giovanni,rossi,via milano', 

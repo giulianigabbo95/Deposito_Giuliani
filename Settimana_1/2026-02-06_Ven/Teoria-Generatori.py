@@ -2,6 +2,10 @@
 Generatori
 Speciale classe di funzioni che permettono di iterare su una serie di valori, ma invece di restituirli tutti in una volta, lo fanno uno alla volta.
 '''
+print("")
+print("START")
+print("Questa è la 5° lezione")
+
 
 #-FUNZIONI-#
 def fibonacci(n:int):
@@ -53,3 +57,8 @@ print(list(catenaGeneratori()))
 ### Uso di @decoratore:
 # Sintassi abbreviata per applicare un decoratore a una funzione. 
 # È equivalente a scrivere funzione = decoratore(funzione)
+
+
+print("----------------------------------------------------------")
+print("STOP")
+print("")

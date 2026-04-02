@@ -1,7 +1,7 @@
 '''
 Realizzare un programma per la gestione di pacchi in un magazzino.
-Il sistema deve essere composto da tre classi:
 
+Il sistema deve essere composto da tre classi:
 a. Classe Pacco
 Ogni pacco deve avere:
     - codice, una stringa che identifica il pacco

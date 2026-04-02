@@ -1,7 +1,12 @@
-
 '''
 Break, Continue, Pass e Splat
+
 '''
+print("")
+print("START")
+print("Questa è la 3° lezione")
+
+
 #Variabili
 numeri = [1, 2, 3, 4, 5]
 
@@ -57,3 +62,8 @@ numeri = [*range(1, 11, 3)]
 print("il comando [*range(1, 11, 3)] stampa tutti i numeri da 1 a 10 con un passo di 3:", numeri)
 # In questo caso, [*range(1, 11)] espande la sequenza di numeri generati da range(1, 11) nella lista [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].
 # L'operatore * svolge il ruolo di "splat", consentendo di trattare gli elementi dell'iterabile come elementi separati nella lista.
+
+
+print("----------------------------------------------------------")
+print("STOP")
+print("")

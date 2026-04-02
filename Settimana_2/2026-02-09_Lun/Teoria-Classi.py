@@ -4,6 +4,7 @@ Classi
 '''
 print("")
 print("START")
+print("Questa è la 6° lezione")
 
 class Persona():
     x = 10
@@ -88,5 +89,7 @@ c2 = Contatore()
 Contatore.mostraNumero_Istanze()
 # Output: Sono state create 2 istanze
 
+
+print("----------------------------------------------------------")
 print("STOP")
 print("")

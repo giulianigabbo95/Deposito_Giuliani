@@ -12,7 +12,7 @@ class ControlloAccessi:
         if consentito == True:
             print(persona.stampaGeneralita(), "Accesso Consentito")
         else:
-            print(persona.stampaGeneralita(), ": Accesso Negato")
+            print(persona.stampaGeneralita(), "Accesso Negato")
         return consentito
 
     def mostraLog(self):
@@ -34,4 +34,4 @@ class LogAccesso:
             stato = "Consentito"
         else:
             stato = "Negato"
-        return f"Alle {self._data_ora.strftime('%d/%m/%Y %H:%M:%S')} la persona {self._persona.stampaGeneralita()} è {stato}"
+        return f"Alle {self._data_ora.strftime('%d/%m/%Y %H:%M:%S')} la persona {self._persona.stampaGeneralita()} è {stato}" #Grazoe Google

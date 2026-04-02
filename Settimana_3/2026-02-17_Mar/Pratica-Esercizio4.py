@@ -2,7 +2,7 @@
 Scrivere un programma che genera 5 numeri casuali e li salva su un file.
 L'utente dovrà cercare di indovinarne almeno 2 oppure avrà perso.
 
-# In collaborazione con Fabio D'Alessandri e Elisabetta Carella
+# In collaborazione con Elisabetta Carella
 '''
 import random
 
@@ -29,6 +29,9 @@ def leggiNumeriFile(nome_file):
 
 
 
+# MAIN
+print("SuperEnalotto")
+
 numeri_giocati = []
 tentativi_rimasti = int(input("Scegli quanti tentativi vuoi fare: "))
 
@@ -45,7 +48,7 @@ while tentativi_rimasti > 0:
             else:
                 print("Numero fuori range!")
     except:
-        print("errore!")
+        print("Errore!")
     if tentativo not in numeri_giocati:
         numeri_giocati.append(tentativo)
         tentativi_rimasti -= 1

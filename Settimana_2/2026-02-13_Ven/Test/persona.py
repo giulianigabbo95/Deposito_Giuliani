@@ -31,11 +31,12 @@ class Dipendente(Persona):
         else:
             return False
         
-    # def stampa
+    def stampaGeneralita(self):
+        return f"({self._id}, {self._cognome}, {self._nome})"
     
     def __str__(self):
-        return f"Dipendente: {self.stampaGeneralita()} - {self._turno} - {self._badge}"
-
+        return self.stampaGeneralita()
+    
 
 class Visitatore(Persona):
     def __init__(self, nome, cognome, id_persona, autorizzato):
@@ -50,4 +51,4 @@ class Visitatore(Persona):
             stato = "Autorizzato"
         else:
             stato = "Non Autorizzato"
-        return f"VISITATORE: {self.stampaGeneralita()} - {stato}"
+        return f"Visitatore: {self.stampaGeneralita()} - {stato}"

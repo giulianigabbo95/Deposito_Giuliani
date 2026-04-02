@@ -1,4 +1,3 @@
-
 '''
 If, Elif, Else e Match
 Controllo del Flusso
@@ -6,6 +5,8 @@ Controllo del Flusso
 print("")
 print("START")
 print("Questa è la 2° lezione")
+print("----------------------------------------------------------")
+
 
 #Variabili
 x = input("Dimmi un numero:")
@@ -59,3 +60,8 @@ match parola:
         print("Sei il docente di questo corso!")
     case _: # Caso DEFAULT in cui parola non corrisponde a nessun'altra stringa elencata nei case precedenti. Praticamente è un un ELSE
         print("Non ti conosco")
+
+
+print("----------------------------------------------------------")
+print("STOP")
+print("")

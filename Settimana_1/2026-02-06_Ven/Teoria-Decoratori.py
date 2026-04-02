@@ -4,6 +4,10 @@ Funzione che modifica il comportamento di un'altra funzione o metodo senza modif
 Utilizzate per aggiungere funzionalità extra come logging, controllo degli accessi, caching, etc... 
 Si applicano anteponendo il simbolo @ al nome del decoratore sopra la funzione da decorare.
 '''
+print("")
+print("START")
+print("Questa è la 5° lezione")
+
 
 #-FUNZIONI-#
 def decoratore(funzione):
@@ -57,3 +61,8 @@ def moltiplica(a, b):
 
 # Chiamata alla funzione decorata
 print("La moltiplicazione è:", moltiplica(3, 4))
+
+
+print("----------------------------------------------------------")
+print("STOP")
+print("")

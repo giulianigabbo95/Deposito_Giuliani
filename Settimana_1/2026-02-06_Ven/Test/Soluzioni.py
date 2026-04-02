@@ -1,8 +1,8 @@
 '''
-1.  Inserisci Cognome nome ed email:
+01. Inserisci Cognome nome ed email:
         Gabriele Giuliani giulianigabbo95@gmail.com
 
-2.  Quale di queste è una delle regole fondamentali dell'OOP: (1 punto)
+02. Quale di queste è una delle regole fondamentali dell'OOP: (1 punto)
     Selezionare 3 opzioni.
         [X] - Astrazione
             - Proprietarietà
@@ -13,7 +13,7 @@
             - Riusabilità
         [X] - Ereditarietà
 
-3.  Cos'è una collezione? Quali conosci e quali caratteristiche hanno? (1 punto)
+03. Cos'è una collezione? Quali conosci e quali caratteristiche hanno? (1 punto)
         Una collezione è un costrutto base di molti linguaggi di programmazione tra cui appunto Python, nel quale abbiamo:
             - Liste: ordinate, modificabili, con possibili duplicati (Es: tsil = [2, 1, 3])
             - Tuple: ordinate, NON modificabile (Es: alput = (1, 4, 2), a volte senza parentesi)
@@ -102,37 +102,34 @@
             - If
             - Match
 
-17. Esercizio 1: Condizioni e cicli (1 punto)
-    Chiedi all'utente di inserire un numero intero positivo. 
-    Usa un ciclo for per stampare tutti i numeri da 1 fino al numero inserito. 
-    Per ogni numero: 
-        stampa "pari" se il numero è pari 
-        stampa "dispari" se il numero è dispari 
-    Se l'utente inserisce un numero minore o uguale a zero, stampa un messaggio di errore.
+17. Esercizio:
+        Condizioni e Cicli (1 punto)
+        Chiedi all'utente di inserire un numero intero positivo. 
+        Usa un ciclo for per stampare tutti i numeri da 1 fino al numero inserito. 
+        Per ogni numero: 
+            stampa "pari" se il numero è pari 
+            stampa "dispari" se il numero è dispari 
+        Se l'utente inserisce un numero minore o uguale a zero, stampa un messaggio di errore.
 
-18. Esercizio 2: Funzioni e Liste (1 punto)
-    Definisci una funzione chiamata conta_vocali. 
-    La funzione deve: 
-        ricevere una stringa come parametro 
-        contare quante vocali contiene (a, e, i, o, u) 
-        restituire il numero totale di vocali 
-    Nel programma principale: 
-        chiedi all'utente di inserire una parola 
-        chiama la funzione 
-        stampa il numero di vocali trovate
+18. Esercizio:
+        Funzioni e Liste (1 punto)
+        Definisci una funzione chiamata conta_vocali. 
+        La funzione deve: 
+            ricevere una stringa come parametro 
+            contare quante vocali contiene (a, e, i, o, u) 
+            restituire il numero totale di vocali 
+        Nel programma principale: 
+            chiedi all'utente di inserire una parola 
+            chiama la funzione 
+            stampa il numero di vocali trovate
 
 19. Com'è andata?
-    9/10
+        9/10
     
 20. EXTRA: Fai un meme sul corso
-    Base: The Most Interesting Man in the World
-    I don't always program well in Python
-    But when I do, a handless Python writes on the keyboard better than I do
-
-
-Dubbi:
-    2. Quale di queste è una delle regole fondamentali dell'OOP - non ho potuto selezionare anche Astrazione sul form
-    
+        Base: The Most Interesting Man in the World
+        I don't always program well in Python
+        But when I do, a handless Python writes on the keyboard better than I do
 '''
 
 # 17

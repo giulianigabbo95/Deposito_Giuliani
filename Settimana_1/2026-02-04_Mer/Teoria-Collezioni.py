@@ -1,10 +1,12 @@
-
 '''
 Liste, Tuple e Insiemi
+
 '''
 print("")
 print("START")
 print("Questa è la 2° lezione")
+print("----------------------------------------------------------")
+
 
 # LISTE
 # Sono Modificabili
@@ -69,3 +71,8 @@ print("Posso rimuovere un elemento dall'insieme con remove(45) o discard(45);", 
 
 gruppone = gruppo.copy()
 print("Posso copiare il gruppo con gruppone = gruppo.copy:", gruppone)
+
+
+print("----------------------------------------------------------")
+print("STOP")
+print("")

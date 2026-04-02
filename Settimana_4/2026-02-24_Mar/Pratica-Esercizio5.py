@@ -1,10 +1,19 @@
 '''
-
+Sviluppare un programma Python che utilizzi NumPy per gestire una matrice 2D attraverso un menu interattivo.
+Dopo ogni operazione eseguita, il risultato deve essere salvato automaticamente in un file .txt.
+Il sistema deve permettere all'utente di:
+    - Creare una nuova matrice 2D di dimensioni scelte dall'utente con numeri casuali.
+    - Estrarre e stampare la sotto-matrice centrale.
+    - Trasporre la matrice e stamparla.
+    - Calcolare e stampare la somma di tutti gli elementi.
+    - Uscire o ripetere il programma.
+    - Moltiplicare elemento per elemento con una seconda matrice delle stesse dimensioni.
+    - Calcolare la media degli elementi della matrice.
 '''
 
 import numpy as np
 
-FILE_NAME = "log_matrice.txt"
+FILE_NAME = r"C:/Users/Gahab/Documents/GitHub/Corso_PyML_Deposito_Studente_Giuliani/Settimana_4/2026-02-24_Mar/log_matrice.txt"
 
 def salvaFile(contenuto):
     with open(FILE_NAME, "a") as file:
@@ -16,7 +25,7 @@ def creaMatrice():
     colonne = int(input("Numero colonne: "))
     matrice = np.random.randint(1, 101, (righe, colonne))
     print("Matrice creata:\n", matrice)
-    salvaFile("Matrice creata:\n" + matrice)
+    salvaFile("Matrice creata:\n" + str(matrice))
     return matrice
 
 def estraiSottomatriceCentrale(matrice):
@@ -38,12 +47,12 @@ def sommaElementi(matrice):
     print("Somma elementi:", s)
     salvaFile("Somma elementi:", s)
 
-def mediaElementi(matrice):
+def calcolaMediaElementi(matrice):
     m = np.mean(matrice)
     print("Media elementi:", m)
     salvaFile("Media elementi:", m)
 
-def moltiplicazioneElementWise(matrice):
+def moltiplicaElementWise(matrice):
     seconda = np.random.randint(1, 101, matrice.shape)
     risultato = matrice * seconda
     print("Seconda matrice:\n", seconda)
@@ -51,7 +60,7 @@ def moltiplicazioneElementWise(matrice):
     salvaFile("Seconda matrice:\n", seconda)
     salvaFile("Moltiplicazione element-wise:\n", risultato)
 
-def determinanteMatrice(matrice):
+def calcolaDeterminanteMatrice(matrice):
     if matrice.shape[0] == matrice.shape[1]:
         det = np.linalg.det(matrice)
         print("Determinante:", det)
@@ -96,11 +105,11 @@ while True:
             case "4":
                 sommaElementi(metrix)
             case "5":
-                mediaElementi(metrix)
+                calcolaMediaElementi(metrix)
             case "6":
-                moltiplicazioneElementWise(metrix)
+                moltiplicaElementWise(metrix)
             case "7":
-                determinanteMatrice(metrix)
+                calcolaDeterminanteMatrice(metrix)
             case "0":
                 print("Ciao!")
                 break

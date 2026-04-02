@@ -4,6 +4,10 @@ Blocchi di codice autonomi che eseguono una determinata operazione.
 Consentono di organizzare il codice in unità modulari, possono essere richiamate e riutilizzate in diverse parti di un programma. 
 Aiutano a scrivere codice più leggibile, comprensibile e manutenibile.
 '''
+print("")
+print("START")
+print("Questa è la 4° lezione")
+
 
 #Definizioni di Funzioni
 def saluta(nome):
@@ -49,3 +53,8 @@ numero = 10
 print("Il numero è:", numero)
 numero = ricalcoloValore(numero)
 print("Il ricacolo è:", numero)
+
+
+print("----------------------------------------------------------")
+print("STOP")
+print("")

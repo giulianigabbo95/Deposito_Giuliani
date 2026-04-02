@@ -3,6 +3,9 @@ Incapsulamento
 
 
 '''
+print("")
+print("START")
+print("Questa è la 8° lezione")
 
 x = 10
 print(x)
@@ -78,3 +81,8 @@ def funzione_esterna():
 print("Numero nel main (globale):", numero)
 funzione_esterna()
 print("Numero nel main dopo chiamata (globale non cambiato):", numero)
+
+
+print("----------------------------------------------------------")
+print("STOP")
+print("")

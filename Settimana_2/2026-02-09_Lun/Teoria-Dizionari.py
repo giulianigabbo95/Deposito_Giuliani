@@ -4,7 +4,7 @@ Dizionari
 '''
 print("")
 print("START")
-
+print("Questa è la 6° lezione")
 
 studente = {
     "nome": "Alice",
@@ -22,6 +22,6 @@ print(studente.keys())
 print(studente.values())
 
 
-
+print("----------------------------------------------------------")
 print("STOP")
 print("")

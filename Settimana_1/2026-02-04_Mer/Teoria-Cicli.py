@@ -1,7 +1,11 @@
-
 '''
 While e For
 '''
+print("")
+print("START")
+print("Questa è la 2° lezione")
+print("----------------------------------------------------------")
+
 
 #WHILE
 '''
@@ -31,7 +35,12 @@ for elemento in lista:
     
     #RANGE
     '''
-    Il Range si usa nei cicli FOr per iterare su un insieme di valori interi
+    Il Range si usa nei cicli For per iterare su un insieme di valori interi
     '''
     for i in range(1, 30, 3):
         print("La funzione incorporata range(1, 30, 2) stampa tutti i valori da 1 a 30 (escluso) con un passo di 3:", i)
+
+
+print("----------------------------------------------------------")
+print("STOP")
+print("")

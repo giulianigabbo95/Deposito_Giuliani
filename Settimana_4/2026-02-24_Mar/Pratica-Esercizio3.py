@@ -18,7 +18,7 @@ Sviluppare uno script Python che esegua le seguenti operazioni:
 import os
 import numpy as np
 
-NOME_FILE = "risultati.txt"
+NOME_FILE = r"C:/Users/Gahab/Documents/GitHub/Corso_PyML_Deposito_Studente_Giuliani/Settimana_4/2026-02-24_Mar/risultati.txt"
 
 np.random.seed(42)
 

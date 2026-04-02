@@ -12,7 +12,8 @@ class Badge:
     def get_codice(self):
         return self._codice
     
-    # def stampa
+    def stampaGeneralita(self):
+        return f"({self._id}, {self._cognome}, {self._nome})"
     
     def __str__(self):
         stato = "Attivo" if self._attivo else "Disattivato"

@@ -42,7 +42,7 @@ controllo = ControlloAccessi()
 turni = [
     Turno(time(6,0), time(14,0)), 
     Turno(time(14,0), time(22,0))
-] #Turno(time(22,0), (6,0)) fa casino perchè va al giorno appresso
+] #Turno(time(22,0), (6,0)) fa casino perchè va al giorno appresso e non so come dirglielo
 badge_1 = Badge("B001")
 badge_2 = Badge("B002")
 badge_3 = Badge("B003")
@@ -56,11 +56,14 @@ visitatori = [
 ]
 
 while True:
-    print("1. Elenca persone")
-    print("2. Verifica accesso")
-    print("3. Aggiungi persona")
-    print("4. Log accessi")
+    print("")
+    print("Menù")
+    print("1. Elenca Persone")
+    print("2. Verifica Accesso")
+    print("3. Aggiungi Persona")
+    print("4. Log Accessi")
     print("5. Esci")
+    print("")
     
     scelta = input("Scegli: ")
     

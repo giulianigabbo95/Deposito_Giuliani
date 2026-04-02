@@ -67,7 +67,7 @@ class Negozio:
                 return self.clienti[i]
             i += 1
         return None
-    
+
     def acquistaArticolo(self, cliente, articolo, quantita):
         i = 0
         while i < len(self.inventario.articoli):
@@ -89,7 +89,7 @@ class Inventario:
             ("Latte", 1.5, 30),
             ("Pasta", 1, 40)
         ]
-    
+
     def mostraArticoli(self):
         print("Inventario:")
         i = 0
@@ -97,7 +97,7 @@ class Inventario:
             a = self.articoli[i]
             print("- " + a[0] + " | Prezzo: " + str(a[1]) + "€ | Quantità: " + str(a[2]))
             i += 1
-            
+
     def aggiornaArticolo(self, nome, prezzo, quantita):
         i = 0
         while i < len(self.articoli):
@@ -109,7 +109,7 @@ class Inventario:
         self.articoli.append((nome, prezzo, quantita))
         print("Nuovo articolo aggiunto.")
 
-     
+
 ####-MAIN-####
 #Variabili
 
@@ -137,7 +137,7 @@ while True:
                 print("2. Acquista articolo")
                 print("3. Visualizza acquisti")
                 print("0. Logout")
-                
+
                 selezione = input("Seleziona tipo di accesso: ")
 
                 match selezione:

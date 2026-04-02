@@ -1,6 +1,9 @@
 '''
 Ereditarietà
 '''
+print("")
+print("START")
+print("Questa è la 7° lezione")
 
 # Classe Base
 class Animale:
@@ -30,4 +33,8 @@ class Veicolo:
         self.modello = modello
         
     def mostraInformazioni(self):
-        
+
+
+print("----------------------------------------------------------")
+print("STOP")
+print("")

@@ -63,11 +63,11 @@ print("Array Unito Convertito a float64 Modificato", arrei_unito)
 
 lista_indici = [0, 3, 7, 12, 25, 33, 48]
 print("Indici Scelti", lista_indici)
-elementi_specifici = arrei_unito[lista_indici]
-print("Array Unito Convertito a float64 Elementi Specifici", elementi_specifici)
-elementi_pari = arrei_unito[arrei_unito % 2 == 0]
-print("Array Unito Convertito a float64 Elementi Pari", elementi_pari)
-media = np.mean(arrei_unito)
-print("Array Unito Convertito a float64 Media Valori", media)
-elementi_maggiori_media = arrei_unito[arrei_unito > media]
-print("Array Unito Convertito a float64 Elementi Maggiori della Media", elementi_maggiori_media)
+arrei_unito_elementi_specifici = arrei_unito[lista_indici]
+print("Array Unito Convertito a float64 Elementi Specifici", arrei_unito_elementi_specifici)
+arrei_unito_elementi_pari = arrei_unito[arrei_unito % 2 == 0]
+print("Array Unito Convertito a float64 Elementi Pari", arrei_unito_elementi_pari)
+arrei_unito_media = np.mean(arrei_unito)
+print("Array Unito Convertito a float64 Media Valori", arrei_unito_media)
+arrei_unito_elementi_maggiori_media = arrei_unito[arrei_unito > arrei_unito_media]
+print("Array Unito Convertito a float64 Elementi Maggiori della Media", arrei_unito_elementi_maggiori_media)

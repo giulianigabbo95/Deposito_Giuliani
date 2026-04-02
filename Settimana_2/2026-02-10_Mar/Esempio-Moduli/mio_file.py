@@ -1,7 +1,7 @@
-import mio_modulo
+import mio_modulo as MM
 
-mio_modulo.saluta("Alice") # Stampa "Ciao, Alice"
+MM.saluta("Alice") # Stampa "Ciao, Alice"
 
 raggio = 2
-cerchio = mio_modulo.Cerchio(raggio)
+cerchio = MM.Cerchio(raggio)
 print(cerchio.area()) #Stampa l'area del cerchio con raggio 2

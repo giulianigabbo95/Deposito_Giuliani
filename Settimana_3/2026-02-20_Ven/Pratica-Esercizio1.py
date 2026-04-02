@@ -1,8 +1,7 @@
 '''
-Create un programma python utilizzando le api https://pokeapi.co/api/v2/pokemon/ {numero} che simula un pokedex.
-Quando troverete un pokemon in maniera randomica verificherà se è presente nel vostro pokedex (pokedex.json).
-In caso non fosse presente vi permetterà di catturarlo salvando le caratteristiche.
-(Sul sistema API sono presenti poco più di 1000 Pokémon)
+Creare un programma python utilizzando le api https://pokeapi.co/api/v2/pokemon/ che simula un pokedex.
+    Trova un pokemon in maniera randomica verificherà se è presente nel proprio pokedex (pokedex.json).
+    In caso non fosse presente permetterà di catturarlo salvando le caratteristiche.
 
 # In collaborazione con Giovanni Iadelise, Maria Visone e Davide Cognetta
 '''
